@@ -1,0 +1,5 @@
+<head><h2> Formulário de Avaliação  - CAA CTEC </h2>  </head>
+<h3> Informe seu curso:</h3>
+{% for curso in cursos %}
+<p><a href="/caa/{{curso.id}}/"><button>{{curso.cursos}}</button></a></p>
+{% endfor %}

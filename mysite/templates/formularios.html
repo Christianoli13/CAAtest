@@ -1,0 +1,5 @@
+<head><h2> FORMULÁRIOS </h2>  </head>
+<h3> Selecione a disciplina a ser avaliada:</h3>
+{% for materia in materias %}
+<p><a href="/caa/{{aluno}}/formularios/{{materia.id}}"><button>{{materia.nome}}</button></a></p>
+{% endfor %}

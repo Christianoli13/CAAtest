@@ -1,0 +1,19 @@
+<head><h2>Formulário de avaliação da disciplina {{disciplina}}</h2></head>
+<form method="post" action="">
+    {% csrf_token %}
+    <h3> 1) Avalie a disciplina em relação a:</h3>
+    {{ form1.as_p }}
+    <h3> 2) Qual a avaliação que você faz do professor (não considerar monitor e estágio docência): </h3>
+    {{ form2.as_p }}
+    <h3> 3)	Quanto ao atendimento às normas acadêmicas:</h3>
+    {{ form3.as_p }}
+    <h3> 4)	Com relação ao método de ensino, qual a avaliação que você faz do professor quanto a:</h3>
+    {{ form4.as_p }}
+    <h3> 5)	Quanto à metodologia de avaliação:</h3>
+    {{ form5.as_p }}
+    <h3> 6)	Qual a avaliação que você faz do laboratório de ensino (apenas para disciplinas de laboratório), quanto à:</h3>
+    {{ form6.as_p }}
+    <h3> 7)	Faça uma autoavaliação:</h3>
+    {{ form7.as_p }}
+<input type="submit" value="Salvar">
+</form>
